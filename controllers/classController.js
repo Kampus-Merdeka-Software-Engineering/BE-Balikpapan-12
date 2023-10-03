@@ -1,7 +1,9 @@
-async function getClasses(req, res) {
-    console.log(`Masuk ke path /`);
+const { classService } = require('../services');
 
-    res.json('OK');
+async function getClasses(req, res) {
+    const classes = await classService.getAllClasses();
+
+    res.status(200).json(classes);
 }
 
 module.exports = {
