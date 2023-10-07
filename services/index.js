@@ -1,5 +1,5 @@
-const classService = require('./classService');
+const { getAllClasses } = require('./classService');
 
 module.exports = {
-    classService
+    getAllClasses
 };
