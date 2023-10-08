@@ -1,7 +1,7 @@
-const { getAllClasses } = require('../services');
+const { classService } = require('../services');
 
 async function getClasses(req, res) {
-    const classes = await getAllClasses();
+    const classes = await classService.getAllClasses();
 
     res.status(200).json(classes);
 }

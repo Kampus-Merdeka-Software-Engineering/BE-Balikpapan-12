@@ -12,6 +12,6 @@ async function getAllClasses() {
     }
 }
 
-module.export = {
+module.exports = {
     getAllClasses
 };
