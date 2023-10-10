@@ -1,10 +1,10 @@
 const express = require('express');
 const { classController } = require('../controllers');
-const router = express.Router();
+const classRouter = express.Router();
 
 // get all classes
-router.get('/classes', classController.getClasses);
+classRouter.get('/', classController.getClasses);
 
 
 
-module.exports = router;
+module.exports = classRouter;

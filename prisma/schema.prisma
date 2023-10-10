@@ -10,10 +10,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
 model Class {
   id_kelas Int @id @default(autoincrement())
   nama_kelas String
   gambar_kelas String
   jumlah_video Int
   deskripsi String @db.VarChar(240)
+}
+
+model Contact {
+  id_contact Int @id @default(autoincrement())
+  nama_contact String 
+  email_contact String
+  pesan_contact String @db.Text
 }
